@@ -1,0 +1,22 @@
+paths:
+  annotation_boxes: "data/raw/Annotation_Boxes.xlsx"
+  filepath_mapping: "data/raw/Breast-Cancer-MRI-filepath_filename-mapping.xlsx"
+  clinical_features: "data/raw/Clinical_and_Other_Features.xlsx"
+  dicom_root: "data/raw/Duke-Breast-Cancer-MRI"
+  extracted_root: "data/interim/extracted_slices"
+  features_csv: "data/processed/radiomics_features.csv"
+  train_csv: "data/processed/features_train.csv"
+  test_csv: "data/processed/features_test.csv"
+  reports_dir: "reports"
+
+experiment:
+  train_fraction: 0.85
+  random_seed: 42
+  radiomics_label: 255
+  normalize_images: true
+  variance_threshold: 0.6
+  series_combinations:
+    all: [0, 1, 2]
+    pre_contrast: [0]
+    post_1: [1]
+    post_contrast: [1, 2]
