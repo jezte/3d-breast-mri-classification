@@ -3,6 +3,8 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Testing and linting
 .pytest_cache/
 .ruff_cache/
 
@@ -28,3 +30,11 @@ data/processed/*
 
 # Generated files
 *.log
+
+# Python build artifacts
+build/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
